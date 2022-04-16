@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import { ThemeLocalContext } from "./context/ThemeContext"
+import { ThemeLocalContext } from "./context/ThemeLocalContext"
 import { ThemeProvider } from "styled-components"
-import {Paths} from "./pages/Paths/"
 import { GlobalStyle } from "./styles/GlobalStyle/GlobalStyle"
+import { Paths } from "./pages/Paths/Paths";
 
 function App() {
 

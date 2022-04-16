@@ -9,7 +9,7 @@ export const Paths = () => {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route exact path="/" element={<MainPage/>}/>
                 <Route path='/tools' element={<ToolsPage/>} />
                 <Route path='/portfolio' element={<Portfolio/>} />
                 <Route path='/contact' element={<ContactPage/>} />

@@ -1,7 +1,7 @@
 import { useForm } from '@formspree/react';
 import { FormForm } from './style';
 
-export function ContactForm() {
+export default function ContactForm() {
   const [state, handleSubmit] = useForm('moqrkkkq');
   if (state.succeeded) {
     return <div>Thank you for signing up!</div>;

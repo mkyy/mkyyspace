@@ -1,7 +1,7 @@
-import { ContactForm } from "../../components/ContactForm/ContactForm";
 import { Footer } from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
-import { ContactSection, Hexagon, Main, PageSheet, SecondPage, Slider, StyledImg, ThirdPage } from "./style";
+import ContactForm from '../../components/ContactForm/ContactForm'
+import { Header } from "../../components/Header/Header";
+import { ContactSection, Hexagon, Main, PageSheet, SecondPage, Slider, StyledImg, ThirdPage } from "./style.js";
 
 const MainPage = () => {
     return(
@@ -66,7 +66,7 @@ const MainPage = () => {
                         <Slider className="slider">
 
                             <li>
-                                <input type="radio" id="slide1" name="slide" checked />
+                                <input type="radio" id="slide1" name="slide" defaultChecked />
                                 <label htmlFor="slide1"></label>
                                 <p>Cursos com certificado nas maiores empresas de ensino sobre tecnologia do Brasil.</p>
                             </li>
@@ -81,7 +81,7 @@ const MainPage = () => {
                         <Slider className="slider">
 
                             <li>
-                                <input type="radio" id="slide3" name="scndslide" checked />
+                                <input type="radio" id="slide3" name="scndslide" defaultChecked />
                                 <label htmlFor="slide3"></label>
                                 <p>
                                 Na minha jornada preciso estudar de 10 a 12 horas por dia, por isso também é preciso Soft Skills.</p>

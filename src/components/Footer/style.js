@@ -11,10 +11,13 @@ background-color: ${props => props.theme.colors.primary};
     flex-direction: column;
     margin-right: 20px;
     margin-bottom: 20px;
+    color: #000;
+    font-weight: bold;
 
     a{
-        padding-left:20px;
         color: #000;
+        font-weight: normal;
+        padding-left:20px;
         text-decoration: none;
         margin-bottom: 2px;
     }

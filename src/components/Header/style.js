@@ -8,8 +8,12 @@ justify-content: flex-end;
 margin-right:30px;
 /* background-color: ${props => props.theme.colors.secondary}; */
 
-.switch{
-    margin-right: 50px;
+.custom-classname{
+  margin-right: 50px;
+}
+
+.custom-classname.react-toggle--checked .react-toggle-track {
+  background-color: ${props => props.theme.colors.primary};
 }
 
 .link{

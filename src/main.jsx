@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { ThemeLocalProvider } from './context/ThemeContext'
+import { ThemeLocalProvider } from './context/ThemeLocalContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 

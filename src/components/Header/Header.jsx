@@ -1,23 +1,21 @@
-import ReactSwitch from "react-switch";
+import Toggle from 'react-toggle'
+import "react-toggle/style.css"
 import {useContext} from 'react'
-import { ThemeLocalContext } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
-
 import {SHeader} from './style.js'
+import { ThemeLocalContext } from "../../context/ThemeLocalContext.jsx";
+import { DarkIcon } from '../DarkIcon/DarkIcon.jsx';
 
-const Header = () => {
+export const Header = () => {
 
     const {theme, handleChange} = useContext(ThemeLocalContext)
 
     return(
-        <SHeader>
-
-            <ReactSwitch className="switch" 
+        <SHeader>            
+            <Toggle className='custom-classname'
             checked={theme.title === 'dark'}
             onChange={handleChange}
-            onColor={theme.colors.primary}
-            checkedIcon={false}
-            uncheckedIcon={false}
+            icons={{checked: false, unchecked: <DarkIcon />}}
             />
 
             <nav>
@@ -30,4 +28,3 @@ const Header = () => {
         </SHeader>
     )
 }
-export default Header;
