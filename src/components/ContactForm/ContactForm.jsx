@@ -4,7 +4,7 @@ import { FormForm } from './style';
 export default function ContactForm() {
   const [state, handleSubmit] = useForm('moqrkkkq');
   if (state.succeeded) {
-    return <div>Thank you for signing up!</div>;
+    return <div> <img src="icons/v.png" alt="" /> <p>Obrigado pela mensagem. ;)</p> </div>;
   }
   return (
     <FormForm>
