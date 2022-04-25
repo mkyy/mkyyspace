@@ -12,6 +12,7 @@ import {
   StyledImg,
   ThirdPage,
 } from './style.js'
+import { Link } from 'react-router-dom'
 
 const MainPage = () => {
   return (
@@ -35,11 +36,10 @@ const MainPage = () => {
               img={'/icons/download.webp'}
               content={'Curriculo'}
             />
-            <Button
-              href={'/portfolio'}
-              img={'/icons/port.png'}
-              content={'Portfólio'}
-            />
+            <Link className='link-btn' to={'/portfolio'}>
+              <img src='icons/port.png' alt='' />
+              Portfólio
+            </Link>
           </div>
 
           <StyledImg src='astronaut.svg' alt='' />

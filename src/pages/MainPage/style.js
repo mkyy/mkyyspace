@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyledImg = styled.img`
   width: 40vw;
@@ -9,7 +9,7 @@ export const StyledImg = styled.img`
     width: 100%;
     height: 70vh;
   }
-`;
+`
 
 export const PageSheet = styled.div`
   width: 99vw;
@@ -24,7 +24,7 @@ export const PageSheet = styled.div`
     background-color: ${(props) => props.theme.colors.secondary};
   }
   &:nth-child(3)::before {
-    content: " ";
+    content: ' ';
     width: 0;
     height: 0;
     border-bottom: 50px solid #a6a6a8;
@@ -34,7 +34,7 @@ export const PageSheet = styled.div`
     top: -50px;
   }
   &:nth-child(3)::after {
-    content: " ";
+    content: ' ';
     width: 0;
     height: 0;
     border-top: 50px solid #a6a6a8;
@@ -43,10 +43,10 @@ export const PageSheet = styled.div`
     position: absolute;
     bottom: -50px;
   }
-`;
+`
 
 export const Main = styled.main`
-  @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
   display: flex;
   justify-content: space-around;
@@ -65,7 +65,22 @@ export const Main = styled.main`
     span {
       color: ${(props) => props.theme.colors.primary};
       text-decoration: 2px dashed underline;
-      font-family: "Press Start 2P", cursive;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .link-btn {
+      margin-right: 20px;
+      padding: 10px 20px;
+      background-color: ${(props) => props.theme.colors.primary};
+      text-decoration: none;
+      color: ${(props) => props.theme.colors.text};
+      border-radius: 15px;
+
+      img {
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+      }
     }
   }
 
@@ -79,7 +94,7 @@ export const Main = styled.main`
       margin: 0px 10px;
     }
   }
-`;
+`
 
 export const SecondPage = styled.div`
   display: flex;
@@ -124,7 +139,7 @@ export const SecondPage = styled.div`
       }
     }
   }
-`;
+`
 
 export const ThirdPage = styled.div`
   display: 100%;
@@ -252,11 +267,11 @@ export const ThirdPage = styled.div`
       left: 36px;
     }
   }
-`;
+`
 
 export const Hexagon = styled.div`
   &:before {
-    content: " ";
+    content: ' ';
     width: 0;
     height: 0;
     border-bottom: 90px solid #ba68c8;
@@ -272,7 +287,7 @@ export const Hexagon = styled.div`
   position: relative;
 
   &:after {
-    content: "";
+    content: '';
     width: 0;
     position: absolute;
     bottom: -90px;
@@ -283,7 +298,7 @@ export const Hexagon = styled.div`
 
   @media (max-width: 425px) {
     &:before {
-      content: " ";
+      content: ' ';
       width: 0;
       height: 0;
       border-bottom: 45px solid #ba68c8;
@@ -299,7 +314,7 @@ export const Hexagon = styled.div`
     position: relative;
 
     &:after {
-      content: "";
+      content: '';
       width: 0;
       position: absolute;
       bottom: -45px;
@@ -308,7 +323,7 @@ export const Hexagon = styled.div`
       border-right: 89px solid transparent;
     }
   }
-`;
+`
 
 export const Slider = styled.ul`
   display: block;
@@ -368,7 +383,7 @@ export const Slider = styled.ul`
       padding: 0;
     }
   }
-`;
+`
 
 export const ContactSection = styled.section`
   background-color: #a6a6a8;
@@ -402,4 +417,4 @@ export const ContactSection = styled.section`
       width: 50vw;
     }
   }
-`;
+`
