@@ -1,19 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ContactPage } from "../Contact/ContactPage";
-import MainPage from "../MainPage/MainPage";
-import { Portfolio } from "../Portfolio/Portfolio";
-import { ToolsPage } from "../ToolsPage/ToolsPage";
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ContactPage } from '../Contact/ContactPage'
+import MainPage from '../MainPage/MainPage'
+import { PortfolioPage } from '../PortfolioPage/'
+import { ToolsPage } from '../ToolsPage/ToolsPage'
 
 export const Paths = () => {
-    return(
-        <BrowserRouter>
-            <Routes>
-                <Route exact path="/" element={<MainPage/>}/>
-                <Route path='/tools' element={<ToolsPage/>} />
-                <Route path='/portfolio' element={<Portfolio/>} />
-                <Route path='/contact' element={<ContactPage/>} />
-            </Routes>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<MainPage />} />
+        <Route path='/tools' element={<ToolsPage />} />
+        <Route path='/portfolio' element={<PortfolioPage />} />
+        <Route path='/contact' element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
