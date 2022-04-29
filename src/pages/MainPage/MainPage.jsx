@@ -1,9 +1,10 @@
-import { Footer } from '../../components/Footer/Footer'
-import ContactForm from '../../components/ContactForm/ContactForm'
-import { Header } from '../../components/Header/Header'
-import { Button } from '../../components/Button/Button'
+import { Footer } from '../../components/Footer/Footer';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import { Header } from '../../components/Header/Header';
+import { Button } from '../../components/Button/Button';
 import {
   ContactSection,
+  DivFoot,
   Hexagon,
   Main,
   PageSheet,
@@ -11,8 +12,8 @@ import {
   Slider,
   StyledImg,
   ThirdPage,
-} from './style.js'
-import { Link } from 'react-router-dom'
+} from './style.js';
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   return (
@@ -26,16 +27,11 @@ const MainPage = () => {
               Welcome to <span>mkyy Space</span>
             </h1>
             <p>
-              Neste espaço você pode encontrar ferramentas essenciais que um Dev
-              precisa, acessando a área "Tools", e também pode ver um pouco mais
-              sobre o desenvolvedor por trás disso.
+              Neste espaço você pode encontrar ferramentas essenciais que um Dev precisa, acessando a área "Tools", e
+              também pode ver um pouco mais sobre o desenvolvedor por trás disso.
             </p>
             <br />
-            <Button
-              href={'maiky-roger.pdf'}
-              img={'/icons/download.webp'}
-              content={'Curriculo'}
-            />
+            <Button href={'maiky-roger.pdf'} img={'/icons/download.webp'} content={'Curriculo'} />
             <Link className='link-btn' to={'/portfolio'}>
               <img src='icons/port.png' alt='' />
               Portfólio
@@ -51,18 +47,12 @@ const MainPage = () => {
           <div className='content-box'>
             <img src='icons/smartphone.png' alt='' />
             <h2>Reponsividade</h2>
-            <p>
-              Total dominio sobre responsividade para páginas mobiles, desktop,
-              tablets, etc.
-            </p>
+            <p>Total dominio sobre responsividade para páginas mobiles, desktop, tablets, etc.</p>
           </div>
           <div className='content-box'>
             <img src='icons/network.png' alt='' />
             <h2>Back-end</h2>
-            <p>
-              Também possuo conhecimento em back-end, e tecnologias como SQL,
-              SpringBoot, e Java.
-            </p>
+            <p>Também possuo conhecimento em back-end, e tecnologias como SQL, SpringBoot, e Java.</p>
           </div>
           <div className='content-box'>
             <img src='icons/calendar.png' alt='' />
@@ -95,42 +85,25 @@ const MainPage = () => {
               <li>
                 <input type='radio' id='slide1' name='slide' defaultChecked />
                 <label htmlFor='slide1'></label>
-                <p>
-                  Cursos com certificado nas maiores empresas de ensino sobre
-                  tecnologia do Brasil.
-                </p>
+                <p>Cursos com certificado nas maiores empresas de ensino sobre tecnologia do Brasil.</p>
               </li>
               <li>
                 <input type='radio' id='slide2' name='slide' />
                 <label htmlFor='slide2'></label>
-                <p>
-                  Dominio sobre as tecnologias mais usadas no mercado de
-                  trabalho.
-                </p>
+                <p>Dominio sobre as tecnologias mais usadas no mercado de trabalho.</p>
               </li>
             </Slider>
 
             <Slider className='slider'>
               <li>
-                <input
-                  type='radio'
-                  id='slide3'
-                  name='scndslide'
-                  defaultChecked
-                />
+                <input type='radio' id='slide3' name='scndslide' defaultChecked />
                 <label htmlFor='slide3'></label>
-                <p>
-                  Na minha jornada preciso estudar de 10 a 12 horas por dia, por
-                  isso também é preciso Soft Skills.
-                </p>
+                <p>Na minha jornada preciso estudar de 10 a 12 horas por dia, por isso também é preciso Soft Skills.</p>
               </li>
               <li>
                 <input type='radio' id='slide4' name='scndslide' />
                 <label htmlFor='slide4'></label>
-                <p>
-                  O que não vai faltar: disciplina, foco, capacidade de aprender
-                  novas tecnologias, e mais.
-                </p>
+                <p>O que não vai faltar: disciplina, foco, capacidade de aprender novas tecnologias, e mais.</p>
               </li>
             </Slider>
           </div>
@@ -142,9 +115,12 @@ const MainPage = () => {
         <img src='data.svg' alt='' />
         <ContactForm />
       </ContactSection>
-
+      <DivFoot>
+        <img style={{ width: '15%', margin: '0 5%' }} src='MAIKY_logo-removebg.png' alt='' />
+        <div style={{ width: '75%', height: '1px', backgroundColor: '#131313' }}></div>
+      </DivFoot>
       <Footer />
     </div>
-  )
-}
-export default MainPage
+  );
+};
+export default MainPage;

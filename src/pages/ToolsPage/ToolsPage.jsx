@@ -1,12 +1,10 @@
-import {Header} from "../../components/Header/Header"
-import { Link } from "react-router-dom"
-
+import { Header } from '../../components/Header/Header';
 
 export const ToolsPage = () => {
-    return (
-        <>
-        <Header/>
-        <h1>Em breve...</h1>
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <h1>Em breve...</h1>
+    </>
+  );
+};

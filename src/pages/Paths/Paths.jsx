@@ -1,8 +1,8 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { ContactPage } from '../Contact/ContactPage'
-import MainPage from '../MainPage/MainPage'
-import { PortfolioPage } from '../PortfolioPage/'
-import { ToolsPage } from '../ToolsPage/ToolsPage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ContactPage } from '../ContactPage/';
+import MainPage from '../MainPage/MainPage';
+import { PortfolioPage } from '../PortfolioPage/';
+import { ToolsPage } from '../ToolsPage/';
 
 export const Paths = () => {
   return (
@@ -14,5 +14,5 @@ export const Paths = () => {
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};

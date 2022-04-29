@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledImg = styled.img`
   width: 40vw;
@@ -9,7 +9,7 @@ export const StyledImg = styled.img`
     width: 100%;
     height: 70vh;
   }
-`
+`;
 
 export const PageSheet = styled.div`
   width: 99vw;
@@ -21,7 +21,7 @@ export const PageSheet = styled.div`
   }
 
   &:nth-child(3) {
-    background-color: ${(props) => props.theme.colors.secondary};
+    background-color: ${props => props.theme.colors.secondary};
   }
   &:nth-child(3)::before {
     content: ' ';
@@ -43,7 +43,7 @@ export const PageSheet = styled.div`
     position: absolute;
     bottom: -50px;
   }
-`
+`;
 
 export const Main = styled.main`
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -63,7 +63,7 @@ export const Main = styled.main`
       font-size: 1.2em;
     }
     span {
-      color: ${(props) => props.theme.colors.primary};
+      color: ${props => props.theme.colors.primary};
       text-decoration: 2px dashed underline;
       font-family: 'Press Start 2P', cursive;
     }
@@ -71,10 +71,16 @@ export const Main = styled.main`
     .link-btn {
       margin-right: 20px;
       padding: 10px 20px;
-      background-color: ${(props) => props.theme.colors.primary};
+      background-color: ${props => props.theme.colors.primary};
       text-decoration: none;
-      color: ${(props) => props.theme.colors.text};
+      color: ${props => props.theme.colors.text};
       border-radius: 15px;
+      transition: 0.4s;
+
+      &:hover {
+        color: ${props => props.theme.colors.background};
+        background-color: #ba00c8;
+      }
 
       img {
         height: 15px;
@@ -94,7 +100,7 @@ export const Main = styled.main`
       margin: 0px 10px;
     }
   }
-`
+`;
 
 export const SecondPage = styled.div`
   display: flex;
@@ -139,7 +145,7 @@ export const SecondPage = styled.div`
       }
     }
   }
-`
+`;
 
 export const ThirdPage = styled.div`
   display: 100%;
@@ -267,7 +273,7 @@ export const ThirdPage = styled.div`
       left: 36px;
     }
   }
-`
+`;
 
 export const Hexagon = styled.div`
   &:before {
@@ -323,7 +329,7 @@ export const Hexagon = styled.div`
       border-right: 89px solid transparent;
     }
   }
-`
+`;
 
 export const Slider = styled.ul`
   display: block;
@@ -383,7 +389,7 @@ export const Slider = styled.ul`
       padding: 0;
     }
   }
-`
+`;
 
 export const ContactSection = styled.section`
   background-color: #a6a6a8;
@@ -417,4 +423,9 @@ export const ContactSection = styled.section`
       width: 50vw;
     }
   }
-`
+`;
+export const DivFoot = styled.div`
+  background-color: ${props => props.theme.colors.secondary};
+  display: flex;
+  align-items: center;
+`;
