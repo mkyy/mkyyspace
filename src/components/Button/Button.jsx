@@ -11,7 +11,7 @@ export const Button = props => {
 
 const AnchorWrapper = styled.a`
   margin-right: 20px;
-  padding: 10px 20px;
+  padding: 20px 40px;
   background-color: ${props => props.theme.colors.primary};
   text-decoration: none;
   color: ${props => props.theme.colors.text};

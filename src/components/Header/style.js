@@ -25,7 +25,7 @@ export const SHeader = styled.header`
     transition: 0.4s;
 
     &:hover {
-      color: ${props => props.theme.colors.background};
+      color: #008cba;
     }
   }
 

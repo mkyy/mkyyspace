@@ -1,11 +1,11 @@
 export const darkTheme = {
-    title:'dark',
-    colors:{
-        primary: '#BA68C8',
-        secondary: '#A6A6A8',
+  title: 'dark',
+  colors: {
+    primary: '#BA68C8',
+    secondary: '#CFCFCF',
 
-        text: '#fff',
-        background:'#131313',
-
-    },
-}
+    text: '#fff',
+    background: '#131313',
+    highlight: '#333',
+  },
+};

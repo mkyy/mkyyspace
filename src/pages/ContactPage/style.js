@@ -7,6 +7,10 @@ export const ContactPageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   color: #131313;
+
+  .btn {
+    margin-bottom: 100px;
+  }
 `;
 
 export const ImgHelmet = styled.img`

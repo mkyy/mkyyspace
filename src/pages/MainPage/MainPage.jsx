@@ -1,7 +1,6 @@
 import { Footer } from '../../components/Footer/Footer';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import { Header } from '../../components/Header/Header';
-import { Button } from '../../components/Button/Button';
 import {
   ContactSection,
   DivFoot,
@@ -27,14 +26,17 @@ const MainPage = () => {
               Welcome to <span>mkyy Space</span>
             </h1>
             <p>
-              Neste espaço você pode encontrar ferramentas essenciais que um Dev precisa, acessando a área "Tools", e
-              também pode ver um pouco mais sobre o desenvolvedor por trás disso.
+              Esse é um espaço destinado para devs, onde você pode encontrar ferramentas essenciais que um Dev precisa,
+              acessando a área "Tools", e também pode ver um pouco mais sobre o desenvolvedor por trás disso.
             </p>
             <br />
-            <Button href={'maiky-roger.pdf'} img={'/icons/download.webp'} content={'Curriculo'} />
             <Link className='link-btn' to={'/portfolio'}>
               <img src='icons/port.png' alt='' />
               Portfólio
+            </Link>
+            <Link className='link-btn' to={'/tools'}>
+              <img src='icons/tool.webp' alt='Ferramentas' />
+              Tools
             </Link>
           </div>
 

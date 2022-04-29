@@ -27,7 +27,7 @@ export const PageSheet = styled.div`
     content: ' ';
     width: 0;
     height: 0;
-    border-bottom: 50px solid #a6a6a8;
+    border-bottom: 50px solid #cfcfcf;
     border-left: 0px solid #000;
     border-right: 99vw solid transparent;
     position: absolute;
@@ -37,7 +37,7 @@ export const PageSheet = styled.div`
     content: ' ';
     width: 0;
     height: 0;
-    border-top: 50px solid #a6a6a8;
+    border-top: 50px solid #cfcfcf;
     border-left: 99vw solid transparent;
     border-right: 0px solid transparent;
     position: absolute;
@@ -70,7 +70,7 @@ export const Main = styled.main`
 
     .link-btn {
       margin-right: 20px;
-      padding: 10px 20px;
+      padding: 15px 40px;
       background-color: ${props => props.theme.colors.primary};
       text-decoration: none;
       color: ${props => props.theme.colors.text};
@@ -336,7 +336,7 @@ export const Slider = styled.ul`
   height: 150px;
   width: 400px;
   position: relative;
-  background-color: #999;
+  background-color: ${props => props.theme.colors.secondary};
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -392,7 +392,7 @@ export const Slider = styled.ul`
 `;
 
 export const ContactSection = styled.section`
-  background-color: #a6a6a8;
+  background-color: ${props => props.theme.colors.secondary};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
