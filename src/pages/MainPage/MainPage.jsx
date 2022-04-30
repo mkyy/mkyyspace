@@ -13,8 +13,13 @@ import {
   ThirdPage,
 } from './style.js';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const MainPage = () => {
+  useEffect(() => {
+    document.title = 'Home - mkyy Space';
+  });
+
   return (
     <div>
       <Header />
@@ -26,17 +31,17 @@ const MainPage = () => {
               Welcome to <span>mkyy Space</span>
             </h1>
             <p>
-              Esse é um espaço destinado para devs, onde você pode encontrar ferramentas essenciais que um Dev precisa,
-              acessando a área "Tools", e também pode ver um pouco mais sobre o desenvolvedor por trás disso.
+              Bem-vindo ao mkyy Space, onde você pode encontrar ferramentas essenciais que um Dev precisa, acessando a
+              área "Tools", e também pode ver um pouco mais sobre o desenvolvedor por trás disso.
             </p>
             <br />
-            <Link className='link-btn' to={'/portfolio'}>
-              <img src='icons/port.png' alt='' />
-              Portfólio
-            </Link>
             <Link className='link-btn' to={'/tools'}>
               <img src='icons/tool.webp' alt='Ferramentas' />
               Tools
+            </Link>
+            <Link className='link-btn' to={'/portfolio'}>
+              <img src='icons/port.png' alt='' />
+              Portfólio
             </Link>
           </div>
 
@@ -114,9 +119,10 @@ const MainPage = () => {
 
       <ContactSection>
         <h1>Deixe sua mensagem</h1>
-        <img src='data.svg' alt='' />
+        <img style={{ width: '30vw' }} src='data.svg' alt='' />
         <ContactForm />
       </ContactSection>
+
       <DivFoot>
         <img style={{ width: '15%', margin: '0 5%' }} src='MAIKY_logo-removebg.png' alt='' />
         <div style={{ width: '75%', height: '1px', backgroundColor: '#131313' }}></div>

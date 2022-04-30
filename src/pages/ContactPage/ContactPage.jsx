@@ -3,8 +3,13 @@ import { Footer } from '../../components/Footer/Footer';
 import { Button } from '../../components/Button/Button';
 
 import { ContactPageWrapper, ImgHelmet, DivFoot } from './style';
+import { useEffect } from 'react';
 
 export const ContactPage = () => {
+  useEffect(() => {
+    document.title = 'Contato - mkyy Space';
+  });
+
   return (
     <>
       <Header />

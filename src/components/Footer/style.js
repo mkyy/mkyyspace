@@ -4,7 +4,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.highlight};
   padding-top: 40px;
 
   .contato {
@@ -24,7 +24,7 @@ export const FooterWrapper = styled.footer`
       transition: 0.3s;
 
       &:hover {
-        color: #ddd;
+        color: #777;
       }
     }
   }
@@ -46,7 +46,7 @@ export const FooterWrapper = styled.footer`
       transition: 0.3s;
 
       &:hover {
-        color: #ddd;
+        color: #777;
       }
     }
   }

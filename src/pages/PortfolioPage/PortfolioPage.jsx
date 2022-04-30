@@ -1,8 +1,13 @@
-import styled from 'styled-components'
-import { Header } from '../../components/Header/Header'
-import { PortfolioItem } from '../../components/PortfolioItem/PortfolioItem'
+import { useEffect } from 'react';
+import styled from 'styled-components';
+import { Header } from '../../components/Header/Header';
+import { PortfolioItem } from '../../components/PortfolioItem/PortfolioItem';
 
 export const PortfolioPage = () => {
+  useEffect(() => {
+    document.title = 'Portfolio - mkyy Space';
+  });
+
   return (
     <>
       <Header />
@@ -42,12 +47,12 @@ export const PortfolioPage = () => {
         />
       </DivContainer>
     </>
-  )
-}
+  );
+};
 
 const DivContainer = styled.div`
   display: flex;
   width: 100%;
   flex-flow: row wrap;
   justify-content: flex-start;
-`
+`;

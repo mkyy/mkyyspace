@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledImg = styled.img`
-  width: 40vw;
-  height: 90vh;
+  width: 35vw;
+  height: 100vh;
   margin: 0 auto;
 
   @media (max-width: 425px) {
@@ -21,14 +21,13 @@ export const PageSheet = styled.div`
   }
 
   &:nth-child(3) {
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${props => props.theme.colors.highlight};
   }
   &:nth-child(3)::before {
     content: ' ';
     width: 0;
     height: 0;
-    border-bottom: 50px solid #cfcfcf;
-    border-left: 0px solid #000;
+    border-bottom: 50px solid ${props => props.theme.colors.highlight};
     border-right: 99vw solid transparent;
     position: absolute;
     top: -50px;
@@ -37,9 +36,8 @@ export const PageSheet = styled.div`
     content: ' ';
     width: 0;
     height: 0;
-    border-top: 50px solid #cfcfcf;
+    border-top: 50px solid ${props => props.theme.colors.highlight};
     border-left: 99vw solid transparent;
-    border-right: 0px solid transparent;
     position: absolute;
     bottom: -50px;
   }
@@ -58,9 +56,9 @@ export const Main = styled.main`
     margin-top: 20vh;
     margin-left: 5vw;
 
-    font-size: 1.4em;
+    font-size: 1.2em;
     h1 {
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
     span {
       color: ${props => props.theme.colors.primary};
@@ -71,15 +69,18 @@ export const Main = styled.main`
     .link-btn {
       margin-right: 20px;
       padding: 15px 40px;
-      background-color: ${props => props.theme.colors.primary};
+      background-color: ${props => props.theme.colors.highlight};
       text-decoration: none;
       color: ${props => props.theme.colors.text};
       border-radius: 15px;
-      transition: 0.4s;
+      transition: all 0.4s ease;
+      width: fit-content;
+      height: fit-content;
+      display: inline-block;
 
       &:hover {
-        color: ${props => props.theme.colors.background};
-        background-color: #ba00c8;
+        background-color: ${props => props.theme.colors.primary};
+        transform: scale(1.2);
       }
 
       img {
@@ -336,9 +337,10 @@ export const Slider = styled.ul`
   height: 150px;
   width: 400px;
   position: relative;
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.highlight};
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: ${props => props.theme.colors.text};
 
   li {
     list-style: none;
@@ -392,7 +394,7 @@ export const Slider = styled.ul`
 `;
 
 export const ContactSection = styled.section`
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.highlight};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -425,7 +427,7 @@ export const ContactSection = styled.section`
   }
 `;
 export const DivFoot = styled.div`
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.highlight};
   display: flex;
   align-items: center;
 `;

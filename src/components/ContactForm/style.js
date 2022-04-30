@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FormForm = styled.div`
   display: flex;
@@ -33,9 +33,11 @@ export const FormForm = styled.div`
       border-radius: 15px;
       border: none;
       font-size: 1.2rem;
+      transition: all 0.4s ease;
 
       &:hover {
-        background-color: ${(props) => props.theme.colors.primary};
+        background-color: ${props => props.theme.colors.primary};
+        transform: scale(1.2);
       }
     }
   }

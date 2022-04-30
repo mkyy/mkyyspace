@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header/Header';
 import { RestFromDiv } from '../../components/tools-components/RestFromDiv/RestFromDiv';
 import { Wrapper, Nav, Content } from './style';
 
 export const ToolsPage = () => {
+  useEffect(() => {
+    document.title = 'Tools - mkyy Space';
+  });
+
   const [toolElement, setToolElement] = useState('');
 
   const handleClick = e => {

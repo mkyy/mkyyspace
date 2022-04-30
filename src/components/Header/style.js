@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const SHeader = styled.header`
+  @import url(https://fonts.googleapis.com/css?family=Lato);
+
   display: flex;
   height: 9vh;
   align-items: center;
@@ -17,15 +19,37 @@ export const SHeader = styled.header`
   }
 
   .link {
-    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    font-family: Lato, sans-serif;
+    font-size: 1.1em;
+    color: #555;
     text-decoration: none;
-    color: ${props => props.theme.colors.text};
-    margin: 0px 5px;
-    padding: 8px;
-    transition: 0.4s;
+    text-transform: uppercase;
+    transition: 0.5s;
+    padding: 5px 9px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #3498db;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
 
     &:hover {
+      opacity: 1;
       color: #008cba;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
     }
   }
 

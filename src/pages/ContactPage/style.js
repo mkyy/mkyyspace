@@ -19,7 +19,7 @@ export const ImgHelmet = styled.img`
 
 export const DivFoot = styled.div`
   padding-top: 40px;
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.highlight};
   display: flex;
   align-items: center;
 `;
