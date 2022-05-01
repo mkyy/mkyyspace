@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 export const ContactPageWrapper = styled.div`
   background-image: url('bg.jpg');
-  background-position: 40%;
+  background-size: cover;
+  background-position: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #131313;
 
   .btn {
-    margin-bottom: 100px;
+    margin-left: 70px;
   }
 `;
 

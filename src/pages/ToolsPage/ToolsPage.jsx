@@ -5,7 +5,7 @@ import { Wrapper, Nav, Content } from './style';
 
 export const ToolsPage = () => {
   useEffect(() => {
-    document.title = 'Tools - mkyy Space';
+    document.title = 'Tools | mkyy Space';
   });
 
   const [toolElement, setToolElement] = useState('');

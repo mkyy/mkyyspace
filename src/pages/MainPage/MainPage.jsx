@@ -17,7 +17,7 @@ import { useEffect } from 'react';
 
 const MainPage = () => {
   useEffect(() => {
-    document.title = 'Home - mkyy Space';
+    document.title = 'Home | mkyy Space';
   });
 
   return (

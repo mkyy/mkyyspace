@@ -11,16 +11,19 @@ export const Button = props => {
 
 const AnchorWrapper = styled.a`
   margin-right: 20px;
-  padding: 20px 40px;
-  background-color: ${props => props.theme.colors.primary};
+  padding: 15px 40px;
+  background-color: ${props => props.theme.colors.highlight};
   text-decoration: none;
   color: ${props => props.theme.colors.text};
   border-radius: 15px;
-  transition: 0.4s;
+  transition: all 0.4s ease;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
 
   &:hover {
-    color: ${props => props.theme.colors.background};
-    background-color: #ba00c8;
+    background-color: ${props => props.theme.colors.primary};
+    transform: scale(1.2);
   }
 
   img {

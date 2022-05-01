@@ -5,7 +5,7 @@ import { PortfolioItem } from '../../components/PortfolioItem/PortfolioItem';
 
 export const PortfolioPage = () => {
   useEffect(() => {
-    document.title = 'Portfolio - mkyy Space';
+    document.title = 'Portfolio | mkyy Space';
   });
 
   return (

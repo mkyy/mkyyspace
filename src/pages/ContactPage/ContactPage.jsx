@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 export const ContactPage = () => {
   useEffect(() => {
-    document.title = 'Contato - mkyy Space';
+    document.title = 'Contato | mkyy Space';
   });
 
   return (
@@ -24,12 +24,12 @@ export const ContactPage = () => {
           <a href='https://www.freelancer.com/u/maikyR0GER'>
             <img style={{ width: '200px' }} src='free.png' alt='' />
           </a>
+          <div className='btn'>
+            <Button href={'maiky-roger.pdf'} img={'/icons/download.webp'} content={'Curriculo'} />
+          </div>
         </div>
 
         <ImgHelmet src='helmet.svg' alt='' />
-        <div className='btn'>
-          <Button href={'maiky-roger.pdf'} img={'/icons/download.webp'} content={'Curriculo'} />
-        </div>
       </ContactPageWrapper>
       <DivFoot>
         <img style={{ width: '15%', margin: '0 5%' }} src='MAIKY_logo-removebg.png' alt='' />

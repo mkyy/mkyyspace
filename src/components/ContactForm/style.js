@@ -29,7 +29,7 @@ export const FormForm = styled.div`
       margin-top: 15px;
       cursor: pointer;
       padding: 10px;
-      background-color: #d9e5d6;
+      background-color: ${props => props.theme.colors.secondary};
       border-radius: 15px;
       border: none;
       font-size: 1.2rem;
