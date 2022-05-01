@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const SHeader = styled.header`
-  @import url(https://fonts.googleapis.com/css?family=Lato);
-
   display: flex;
   height: 9vh;
   align-items: center;
@@ -21,7 +19,6 @@ export const SHeader = styled.header`
   .link {
     position: relative;
     display: inline-block;
-    font-family: Lato, sans-serif;
     font-size: 1.1em;
     color: #555;
     text-decoration: none;
