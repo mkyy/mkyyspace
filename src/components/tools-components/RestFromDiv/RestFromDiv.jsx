@@ -11,8 +11,8 @@ export const RestFromDiv = () => {
   const handleClick = () => {
     let n1 = ref1.current.value;
     let n2 = ref2.current.value;
-    if (isNaN(n1) || isNaN(n2)) {
-      txtAreaRef.current.value = 'Você precisa digitar valores númericos.';
+    if (isNaN(n1 + n2) || n1 === '' || n2 === '') {
+      txtAreaRef.current.value = 'Você precisa digitar dois valores númericos.';
     } else {
       txtAreaRef.current.value = `O resto da divisão é: ${Math.floor(n1 % n2)} 
 O resultado da divisão é: ${Math.floor(n1 / n2)}`;
@@ -25,8 +25,8 @@ O resultado da divisão é: ${Math.floor(n1 / n2)}`;
       <p>Calculadora de Resto da Divisão</p>
       <DivContainer>
         <p>
-          Basta digitar os numeros abaixo e clicar em "Calcular Resto", lembrando que não funciona para numeros
-          fracionados.
+          Basta digitar os numeros abaixo e clicar em "Calcular Resto", lembrando que não funciona
+          para numeros fracionados.
         </p>
         <p>Resto da divisão de:</p>
         <div style={{ display: 'flex', alignItems: 'center' }}>

@@ -3,7 +3,7 @@ import { CalcButton } from '../../CalcButton/CalcButton';
 import { InputN } from '../InputN/';
 import styled from 'styled-components';
 
-export const RestFromDiv = () => {
+export const Factor = () => {
   const ref1 = useRef('');
   const ref2 = useRef('');
   const txtAreaRef = useRef('');
@@ -25,8 +25,8 @@ O resultado da divisão é: ${Math.floor(n1 / n2)}`;
       <p>Calculadora de fatoração</p>
       <DivContainer>
         <p>
-          Basta digitar os numeros abaixo e clicar em "Calcular Resto", lembrando que não funciona para numeros
-          fracionados.
+          Basta digitar os numeros abaixo e clicar em "Calcular Resto", lembrando que não funciona
+          para numeros fracionados.
         </p>
         <p>Resto da divisão de:</p>
         <div style={{ display: 'flex', alignItems: 'center' }}>

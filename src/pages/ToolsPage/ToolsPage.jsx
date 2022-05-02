@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header/Header';
 import { RestFromDiv } from '../../components/tools-components/RestFromDiv/RestFromDiv';
+import { Factor } from '../../components/tools-components/Factor/';
 import { Wrapper, Nav, Content } from './style';
+import { RegraDeTres } from '../../components/tools-components/RegraDeTres/RegraDeTres';
 
 export const ToolsPage = () => {
   useEffect(() => {
@@ -17,8 +19,10 @@ export const ToolsPage = () => {
         setToolElement(<RestFromDiv />);
         break;
       case 2:
+        setToolElement(<Factor />);
         break;
       case 3:
+        setToolElement(<RegraDeTres />);
         break;
     }
   };

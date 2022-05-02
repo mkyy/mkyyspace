@@ -12,14 +12,15 @@ export const Button = props => {
 const AnchorWrapper = styled.a`
   margin-right: 20px;
   padding: 15px 40px;
-  background-color: ${props => props.theme.colors.highlight};
+  background-color: transparent;
   text-decoration: none;
-  color: ${props => props.theme.colors.text};
+  color: #131313;
   border-radius: 15px;
   transition: all 0.4s ease;
   width: fit-content;
   height: fit-content;
   display: inline-block;
+  font-size: 1.3rem;
 
   &:hover {
     background-color: ${props => props.theme.colors.primary};

@@ -80,7 +80,7 @@ export const Main = styled.main`
 
       &:hover {
         background-color: ${props => props.theme.colors.primary};
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
 
       img {
@@ -109,6 +109,7 @@ export const SecondPage = styled.div`
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
+  /* visibility: hidden; */
 
   .content-box {
     background-color: #c2bbf0;

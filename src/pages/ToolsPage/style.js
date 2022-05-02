@@ -7,11 +7,13 @@ export const Wrapper = styled.div`
 
 export const Nav = styled.ul`
   width: 20vw;
+  margin-right: 30px;
+  padding: 0px;
 
   li {
     list-style-type: none;
     border-bottom: 1px solid #ddd;
-    padding: 7px 0;
+    padding: 7px 0px;
     position: relative;
 
     &:after {
@@ -36,5 +38,7 @@ export const Nav = styled.ul`
 
 export const Content = styled.div`
   width: 60vw;
+  min-height: 91vh;
   padding: 40px 30px;
+  background-color: ${props => props.theme.colors.highlight};
 `;
