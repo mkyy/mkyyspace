@@ -24,7 +24,7 @@ O resultado da divisão é: ${Math.floor(n1 / n2)}`;
       <h2>Fatorar número</h2>
       <p>Calculadora de fatoração</p>
       <DivContainer>
-        <p>
+        {/* <p>
           Basta digitar os numeros abaixo e clicar em "Calcular Resto", lembrando que não funciona
           para numeros fracionados.
         </p>
@@ -47,7 +47,7 @@ O resultado da divisão é: ${Math.floor(n1 / n2)}`;
             display: 'block',
             fontSize: '1.2rem',
           }}
-        />
+        /> */}
       </DivContainer>
     </div>
   );
