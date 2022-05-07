@@ -20,6 +20,16 @@ export const PortfolioPage = () => {
         />
 
         <PortfolioItem
+          title='FreeGames DB'
+          desc='Plataforma de jogos que mostra informações sobre os jogos grátis mais populares da
+          atualidade com 350+ diversos games. Possui ferramenta de filtros por data de
+          lançamento e plataforma. Tudo feito usando React.js e Javascript, além de bibliotecas
+          como react-bootstrap, styled-components e react-router-dom.'
+          img='/portfolio/freegdb.png'
+          src='https://freegames-db.vercel.app/'
+        />
+
+        <PortfolioItem
           title='Netflix Clone'
           desc='Um projeto recriando a interface da Netflix, foi usado jQuery, Bootstrap, HTML, CSS, JS, e uma API chamada TMDB.'
           img='/portfolio/netflix.png'
@@ -54,5 +64,5 @@ const DivContainer = styled.div`
   display: flex;
   width: 100%;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
 `;
