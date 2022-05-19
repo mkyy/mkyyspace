@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const StyledImg = styled.img`
   width: 35vw;
-  height: 100vh;
-  margin: 0 auto;
+  height: auto;
+  margin: 0px auto;
+  padding: 20px 0px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 728px) {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
+    margin: 0 auto;
   }
 `;
 
@@ -16,8 +18,14 @@ export const PageSheet = styled.div`
   height: 100vh;
   position: relative;
 
-  @media (max-width: 425px) {
-    height: 150vh;
+  @media (max-width: 1024px) {
+    height: 140vh;
+  }
+
+  &:nth-child(2) {
+    @media (max-width: 425px) {
+      height: 110vh;
+    }
   }
 
   &:nth-child(3) {
@@ -51,7 +59,7 @@ export const Main = styled.main`
   width: 100%;
 
   .text-box {
-    width: 35vw;
+    width: 45vw;
     height: fit-content;
     margin-top: 20vh;
     margin-left: 5vw;
@@ -68,7 +76,7 @@ export const Main = styled.main`
 
     .link-btn {
       margin-right: 20px;
-      padding: 15px 40px;
+      padding: 15px 30px;
       background-color: ${props => props.theme.colors.highlight};
       text-decoration: none;
       color: ${props => props.theme.colors.text};
@@ -76,7 +84,6 @@ export const Main = styled.main`
       transition: all 0.4s ease;
       width: fit-content;
       height: fit-content;
-      display: inline-block;
 
       &:hover {
         background-color: ${props => props.theme.colors.primary};
@@ -88,17 +95,20 @@ export const Main = styled.main`
         width: 15px;
         margin-right: 10px;
       }
+
+      @media (max-width: 425px) {
+        padding: 5px 10px;
+      }
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 728px) {
     justify-content: inherit;
     flex-direction: column;
     .text-box {
       width: 90vw;
       margin: 0 auto;
       z-index: 10;
-      margin: 0px 10px;
     }
   }
 `;
@@ -116,7 +126,7 @@ export const SecondPage = styled.div`
     color: #000;
     padding: 30px 15px;
     width: 25vw;
-    height: 30vh;
+    height: 220px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 20px;
     display: flex;
@@ -132,7 +142,7 @@ export const SecondPage = styled.div`
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
 
     .content-box {
@@ -224,7 +234,7 @@ export const ThirdPage = styled.div`
     justify-content: space-between;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     justify-content: space-between;
 
@@ -304,7 +314,7 @@ export const Hexagon = styled.div`
     border-right: 178px solid transparent;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 1024px) {
     &:before {
       content: ' ';
       width: 0;
@@ -386,7 +396,7 @@ export const Slider = styled.ul`
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 1024px) {
     width: 90vw;
     li p {
       padding: 0;
@@ -427,6 +437,7 @@ export const ContactSection = styled.section`
     }
   }
 `;
+
 export const DivFoot = styled.div`
   background-color: ${props => props.theme.colors.highlight};
   display: flex;

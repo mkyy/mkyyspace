@@ -24,30 +24,7 @@ O resultado da divisão é: ${Math.floor(n1 / n2)}`;
       <h2>Fatorar número</h2>
       <p>Calculadora de fatoração</p>
       <DivContainer>
-        {/* <p>
-          Basta digitar os numeros abaixo e clicar em "Calcular Resto", lembrando que não funciona
-          para numeros fracionados.
-        </p>
-        <p>Resto da divisão de:</p>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <InputN reff={ref1} content={'dividendo'} />
-          de
-          <InputN reff={ref2} content={'divisor'} />
-        </div>
-
-        <CalcButton onClick={handleClick} content={'Calcular Resto'} />
-
-        <textarea
-          ref={txtAreaRef}
-          style={{
-            maxWidth: '95%',
-            width: '95%',
-            height: '200px',
-            margin: '0 auto',
-            display: 'block',
-            fontSize: '1.2rem',
-          }}
-        /> */}
+        <p>em breve...</p>
       </DivContainer>
     </div>
   );

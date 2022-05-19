@@ -31,18 +31,21 @@ const MainPage = () => {
               Welcome to <span>mkyy Space</span>
             </h1>
             <p>
-              Bem-vindo ao mkyy Space, onde você pode encontrar ferramentas essenciais que um Dev precisa, acessando a
-              área "Tools", e também pode ver um pouco mais sobre o desenvolvedor por trás disso.
+              Bem-vindo ao mkyy Space, onde você pode encontrar ferramentas essenciais que um Dev
+              precisa, acessando a área "Tools", e também pode ver um pouco mais sobre o
+              desenvolvedor por trás disso.
             </p>
             <br />
-            <Link className='link-btn' to={'/tools'}>
-              <img src='icons/tool.webp' alt='Ferramentas' />
-              Tools
-            </Link>
-            <Link className='link-btn' to={'/portfolio'}>
-              <img src='icons/port.png' alt='' />
-              Portfólio
-            </Link>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Link className='link-btn' to={'/tools'}>
+                <img src='icons/tool.webp' alt='Ferramentas' />
+                Tools
+              </Link>
+              <Link className='link-btn' to={'/portfolio'}>
+                <img src='icons/port.png' alt='' />
+                Portfólio
+              </Link>
+            </div>
           </div>
 
           <StyledImg src='astronaut.svg' alt='' />
@@ -59,7 +62,9 @@ const MainPage = () => {
           <div className='content-box'>
             <img src='icons/network.png' alt='' />
             <h2>Back-end</h2>
-            <p>Também possuo conhecimento em back-end, e tecnologias como SQL, SpringBoot, e Java.</p>
+            <p>
+              Também possuo conhecimento em back-end, e tecnologias como SQL, SpringBoot, e Java.
+            </p>
           </div>
           <div className='content-box'>
             <img src='icons/calendar.png' alt='' />
@@ -92,7 +97,9 @@ const MainPage = () => {
               <li>
                 <input type='radio' id='slide1' name='slide' defaultChecked />
                 <label htmlFor='slide1'></label>
-                <p>Cursos com certificado nas maiores empresas de ensino sobre tecnologia do Brasil.</p>
+                <p>
+                  Cursos com certificado nas maiores empresas de ensino sobre tecnologia do Brasil.
+                </p>
               </li>
               <li>
                 <input type='radio' id='slide2' name='slide' />
@@ -105,12 +112,18 @@ const MainPage = () => {
               <li>
                 <input type='radio' id='slide3' name='scndslide' defaultChecked />
                 <label htmlFor='slide3'></label>
-                <p>Na minha jornada preciso estudar de 10 a 12 horas por dia, por isso também é preciso Soft Skills.</p>
+                <p>
+                  Na minha jornada preciso estudar de 10 a 12 horas por dia, por isso também é
+                  preciso Soft Skills.
+                </p>
               </li>
               <li>
                 <input type='radio' id='slide4' name='scndslide' />
                 <label htmlFor='slide4'></label>
-                <p>O que não vai faltar: disciplina, foco, capacidade de aprender novas tecnologias, e mais.</p>
+                <p>
+                  O que não vai faltar: disciplina, foco, capacidade de aprender novas tecnologias,
+                  e mais.
+                </p>
               </li>
             </Slider>
           </div>

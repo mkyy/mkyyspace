@@ -7,7 +7,7 @@ export const PortfolioItem = props => {
         className='my-2 mx-auto p-relative bg-white shadow-1 blue-hover container-c'
         style={{
           width: '30vw',
-          maxWidth: '400px',
+          minWidth: '400px',
           height: '550px',
           margin: '20px',
           overflow: 'hidden',
